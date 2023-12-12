@@ -37,7 +37,7 @@ export class FirebaseService {
   }
 
   updateUser(displayName: string) {
-    return updateProfile(getAuth().currentUser, { displayName })
+    return updateProfile(getAuth().currentUser, { displayName });
   }
 
   sendRecoveryEmail(email: string) {
@@ -65,7 +65,7 @@ export class FirebaseService {
     return updateDoc(doc(getFirestore(), path), data);
   }
   deleteDocument(path: string){
-    return deleteDoc(doc(getFirestore(), path))
+    return deleteDoc(doc(getFirestore(), path));
   }
 
   async getDocument(path: string) {
